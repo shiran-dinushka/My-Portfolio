@@ -2,10 +2,9 @@ import React from "react";
 import PageTitle from "./PageTitle";
 import PageDescription from "./PageDescription";
 import Card from "./Card";
-import Worker from "../assets/worker.png";
-import SEProject from "../assets/seproject.png"
-import LMS from "../assets/LMS.jpg"
-import writerB from "../assets/backend.jpeg"
+import SEProject from "../assets/seproject.png";
+import LMS from "../assets/LMS.jpg";
+import writerB from "../assets/backend.jpeg";
 
 export default function Projects() {
   return (
@@ -35,7 +34,7 @@ export default function Projects() {
             type="Backend"
             tags={["NodeJS", "MongoDB", "ExpressJS"]}
             link="https://github.com/Anuja-2000/article-writing-backend"
-              image={writerB}
+            image={writerB}
           />
           <Card
             name="Learn Life"
@@ -45,9 +44,9 @@ export default function Projects() {
               students can easily enroll in their preferred courses
               through the website. "
             type="Full Stack"
-            tags={["JavaScript", " Bootstrap","PHP"]}
+            tags={["JavaScript", " Bootstrap", "PHP"]}
             link="https://github.com/shiran-dinushka/LearnLife"
-              image={LMS}
+            image={LMS}
           />
         </div>
       </div>
