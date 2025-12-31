@@ -25,7 +25,7 @@ export default function Introduction() {
       </div>
 
       <div className="text-xl sm:text-2xl lg:text-3xl font-semibold mt-4">
-        A Passionate Full Stack Developer
+        A Passionate Software Engineer
       </div>
 
       <p className="mt-5 text-base sm:text-lg text-justify leading-relaxed text-text max-w-xl">
