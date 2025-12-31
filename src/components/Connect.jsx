@@ -1,57 +1,54 @@
 import React from "react";
-import { faGithub,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import PageTitle from "./PageTitle";
+import PageDescription from "./PageDescription";
 
 export default function Connect() {
-  const contactIconStyle = "border-2 border-red-800 text-blue-600 p-15 rounded-2xl bg-gray-200 hover:bg-blue-100";
-  const fontIconStyle = "text-4xl text-black";
+  const contactIconStyle =
+    "py-10 px-15 rounded-2xl border border-border bg-card hover:scale-120 shadow-xl transition duration-300 flex flex-col space-y-2 items-center";
+  const fontIconStyle = "text-4xl";
   return (
-    <div className="border-2 border-blue-800 h-120">
-      <div>
-        <h1 className="text-4xl font-bold text-center mt-10  py-4">
-          Connect With Me
-           <span className="block mx-auto mt-2 h-2 w-16 bg-indigo-500 rounded"></span>
-        </h1>
-        <p className="text-lg text-center mt-4">
-          Feel free to reach out through any of the platforms below:
-        </p>
-        <ul className="flex justify-center items-center space-x-6 list-none text-center mt-18">
+    <div className="border-b border-border pt-5 pb-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto text-center">
+        <PageTitle title="Connect With Me" />
+        <PageDescription description="Feel free to reach out through any of the platforms below" />
+        <ul className="flex flex-wrap justify-center items-center gap-8 mt-6 list-none">
           <li>
             <a
-              href="mailto:"
-              className={contactIconStyle}
+              href="https://github.com/shiran-dinushka"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className={fontIconStyle}
-              />
+              <div className={contactIconStyle}>
+                <FontAwesomeIcon icon={faGithub} className={fontIconStyle} />
+                <span>GitHub</span>
+              </div>
             </a>
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/"
-              className={contactIconStyle}
+              href="https://www.linkedin.com/in/shiran-dinushka/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className={fontIconStyle}
-              />
+              <div className={contactIconStyle}>
+                <FontAwesomeIcon icon={faLinkedin} className={fontIconStyle} />
+                 <span>LinkedIn</span>
+              </div>
             </a>
           </li>
           <li>
             <a
-              href=""
-              className={contactIconStyle}
+              href="mailto:shirandinushka9@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className={fontIconStyle}
-              />
+              <div className={contactIconStyle}>
+                <FontAwesomeIcon icon={faEnvelope} className={fontIconStyle} />
+                 <span>Gmail</span>
+              </div>
             </a>
           </li>
         </ul>
