@@ -31,6 +31,10 @@ export default function Skills() {
         <div className={cardStyle}>
           <CardTitle title="Frontend" />
           <div className={iconWrapperStyle}>
+            <LanguageIcon name="HTML" />
+            <LanguageIcon name="CSS" />
+            <LanguageIcon name="Tailwindcss" />
+            <LanguageIcon name="MaterialUI" />
             <LanguageIcon name="JavaScript" />
             <LanguageIcon name="React" />
             <LanguageIcon name="NextJS" />
@@ -43,6 +47,8 @@ export default function Skills() {
             <LanguageIcon name="Java" />
             <LanguageIcon name="Python" />
             <LanguageIcon name="NodeJS" />
+            <LanguageIcon name="ExpressJS" />
+            <LanguageIcon name="SpringBoot" />
           </div>
         </div>
 
