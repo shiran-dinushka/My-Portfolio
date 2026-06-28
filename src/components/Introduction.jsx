@@ -38,7 +38,7 @@ export default function Introduction() {
 
       <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
         <a
-          href="/Shiran_Dinushka_SE_CV.pdf"
+          href="/Shiran_Dinushka.pdf"
           download
           target="_blank"
           rel="noopener noreferrer"
